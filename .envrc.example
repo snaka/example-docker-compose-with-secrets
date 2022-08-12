@@ -1,1 +1,2 @@
+# Copy this file as `.envrc`
 export SECRET="REPLAE_HERE_WITH_SECRET"
