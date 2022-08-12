@@ -5,12 +5,20 @@
 - Use [direnv](https://github.com/direnv/direnv) to manage environment variables.
 - Exclude `.envrc` from git management because it contains secrets.
 
-## Usage
+## Example of operation
 
 1. Create a `.envrc` file with your secrets. ( referring to `.envrc.example` )
-    - Don't forget to run `direnv allow`.
+    - For example:
+      ```
+      export SECRET="MY-TOP-SECRET-SO-DO-NOT-COMMIT-THIS-INFORMATION"
+      ```
+    - Don't forget to run `direnv allow`after creating the file.
 2. Run `docker compose up test`
 3. Check that `SECRET: xxx` is printed in the log of the container. (`xxx` is the value of the secret)
+    - For example:
+      ```
+      SECRET: MY-TOP-SECRET-SO-DO-NOT-COMMIT-THIS-INFORMATION
+      ```
 
 ## Explanation of example
 
