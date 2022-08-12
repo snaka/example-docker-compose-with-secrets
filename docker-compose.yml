@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  test:
+    image: ubuntu:latest
+    environment:
+      SECRET:
+    command: |
+      echo "SECRET: ${SECRET}"
