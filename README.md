@@ -8,6 +8,7 @@
 ## Usage
 
 1. Create a `.envrc` file with your secrets. ( referring to `.envrc.example` )
+    - Don't forget to run `direnv allow`.
 2. Run `docker compose up test`
 3. Check that `SECRET: xxx` is printed in the log of the container. (`xxx` is the value of the secret)
 
