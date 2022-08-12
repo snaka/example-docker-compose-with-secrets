@@ -24,4 +24,5 @@
 
 - In the `test` container, secret data is taken from the environment variable `SECRET`.
 - In `docker-compose.yml`, the environment variable of the same name on the hos is referenced by defining it as `SECRET:` in the `environment` section.
+    - See also: [Pass environment variables to containers](https://docs.docker.com/compose/environment-variables/#pass-environment-variables-to-containers)
 - Finally, in the running container, `${SECRET}` is printed out the secret data received from outside the container.
